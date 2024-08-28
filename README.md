@@ -18,8 +18,8 @@ This project is a chat interface for a chatbot. It is built with Next.js and Tai
 ## Installation
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/debsouryadatta/support-chatbot.git
-    cd support-chatbot
+    git clone https://github.com/debsouryadatta/mesmer-ai-fe.git
+    cd mesmer-ai-fe
     ```
 
 2. **Install dependencies:**
@@ -34,4 +34,4 @@ This project is a chat interface for a chatbot. It is built with Next.js and Tai
 
 
 ## Demo
-- [Live Demo](https://support-chatbot-brown.vercel.app)
+- [Live Demo](https://mesmer-ai-fe.vercel.app/)
