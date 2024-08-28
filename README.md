@@ -1,19 +1,21 @@
 # Support Chatbot
 
 ## Overview
-This project is a chat interface for a chatbot. It is built with Next.js and Tailwind CSS. It fetches the responses from our backend API hosted on Oracle vps and renders them in a chat-like interface. Its Streaming feature makes it more interactive and real-time.
+This project is a chat interface for a chatbot. It is built with Next.js and Tailwind CSS. It fetches the responses from our backend API hosted on Oracle vps and renders them in a chat-like interface. Its Streaming feature makes it more interactive and real-time. Also available in dark mode.
 
 ## Technologies Used
 - **Next.js**: For building the user interface.
 - **Tailwind CSS**: For styling the application.
 - **Shadcn**: For UI components like avatars, buttons, and inputs.
 - **Zustand**: For state management.
+- **Next Themes**: For dark mode support.
 
 ## Features
 - Real-time chatbot simulation with data fetching from backend API.
 - Streaming feature for real-time responses.
 - Clean and modern UI components.
 - Responsive design for mobile and desktop.
+- Dark mode support.
 
 
 ## Installation

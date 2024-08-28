@@ -76,11 +76,11 @@ const ChatWindow = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-400 bg-opacity-50">
+    <div className="flex flex-col items-center justify-center p-4">
+      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-400 dark:from-neutral-100 dark:to-neutral-400 bg-opacity-50">
         Welcome to Mesmer Ai
       </h2>
-      <div className="w-full bg-white rounded-lg shadow-lg p-6 ">
+      <div className="w-full bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 ">
         <div className="space-y-4 mb-4 max-h-[70vh] overflow-y-scroll" style={{
           overflowY: "auto",
           scrollbarWidth: "none",
@@ -98,7 +98,7 @@ const ChatWindow = () => {
             onChange={(e) => setUserInput(e.target.value)}
             placeholder="Type your message..."
             required
-            className="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-grow p-2 border border-gray-300 dark:border-gray-600 dark:bg-zinc-900 rounded-l-lg focus:outline-none"
           />
           <button
             type="submit"

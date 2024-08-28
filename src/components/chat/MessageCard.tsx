@@ -33,7 +33,7 @@ const MessageCard = ({ message }: {message: any}) => {
           } p-2 rounded-lg shadow-md`}
         >
           {message.content && (
-            <div className="whitespace-pre-wrap">
+            <div className="whitespace-pre-wrap text-black">
               {message.content}
             </div>
           )}
