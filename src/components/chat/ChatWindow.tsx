@@ -103,7 +103,7 @@ const ChatWindow = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`p-2 bg-blue-500 text-white rounded-r-lg ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'}`}
+            className={`p-2 bg-zinc-500 text-white rounded-r-lg ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-zinc-600'}`}
           >
             {isLoading ? 'Loading...' : 'Send'}
           </button>
