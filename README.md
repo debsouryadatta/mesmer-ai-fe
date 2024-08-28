@@ -7,6 +7,7 @@ This project is a chat interface for a chatbot. It is built with Next.js and Tai
 - **Next.js**: For building the user interface.
 - **Tailwind CSS**: For styling the application.
 - **Shadcn**: For UI components like avatars, buttons, and inputs.
+- **Zustand**: For state management.
 
 ## Features
 - Real-time chatbot simulation with data fetching from backend API.

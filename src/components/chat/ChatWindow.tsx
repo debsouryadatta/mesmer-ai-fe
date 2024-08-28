@@ -1,15 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import MessageCard from './MessageCard';
+import { useMessageStore } from '@/store/global';
 
 const ChatWindow = () => {
   const [userInput, setUserInput] = useState('');
-  const [messages, setMessages] = useState<{ role: string; content: string; }[]>([
-    {
-      role: 'assistant',
-      content: 'Hi there! How can I assist you today?',
-    }
-  ]);
+  const [messages, setMessages] = useState<{ role: string; content: string; }[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const { messageStore, setMessageStore } = useMessageStore();
 
   const fetchStreamedResponse = async () => {
     setIsLoading(true);
@@ -53,6 +50,8 @@ const ChatWindow = () => {
       });
     }
 
+    setMessageStore(messages);
+    // console.log("Message Store", messageStore);
     setIsLoading(false);
   };
 
@@ -71,6 +70,10 @@ const ChatWindow = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  useEffect(() => {
+    setMessages(messageStore);
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
