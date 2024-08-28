@@ -74,8 +74,8 @@ const ChatWindow = () => {
 
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-400 bg-opacity-50">
-        Mesmer Ai
+      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-400 bg-opacity-50">
+        Welcome to Mesmer Ai
       </h2>
       <div className="w-full bg-white rounded-lg shadow-lg p-6 ">
         <div className="space-y-4 mb-4 max-h-[70vh] overflow-y-scroll" style={{
