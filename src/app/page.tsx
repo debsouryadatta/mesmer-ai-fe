@@ -1,17 +1,13 @@
-"use client";
-
-import { ThemeButton } from "@/components/ThemeButton";
-import ChatContainer from "../components/chat/ChatContainer";
+import { redirect } from "next/navigation";
+import React from 'react'
 
 export default function page() {
+
+  redirect('/chat')
+
   return (
-    <>
-      <div className="absolute right-10 top-10">
-        <ThemeButton />
-      </div>
-      <div className="flex items-center justify-center h-screen w-screen bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-        <ChatContainer />
-      </div>
-    </>
-  );
+    <div>
+      app
+    </div>
+  )
 }

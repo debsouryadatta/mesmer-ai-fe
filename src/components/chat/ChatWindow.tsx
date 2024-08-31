@@ -76,8 +76,8 @@ const ChatWindow = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center p-4">
-      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-400 dark:from-neutral-100 dark:to-neutral-400 bg-opacity-50">
+    <div className="flex flex-col items-center justify-center p-4 h-[90vh] md:mt-10">
+      <h2 className="text-center mb-6 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-950 to-zinc-400 dark:from-neutral-100 dark:to-neutral-400 bg-opacity-50">
         Welcome to Mesmer Ai
       </h2>
       <div className="w-full bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 ">
@@ -91,6 +91,7 @@ const ChatWindow = () => {
           ))}
           <div ref={messagesEndRef} />
         </div>
+        {isLoading && <div className="text-center my-1 text-zinc-200 text-sm">Typing...</div>}
         <form onSubmit={handleSubmit} className="flex">
           <input
             type="text"
@@ -105,7 +106,8 @@ const ChatWindow = () => {
             disabled={isLoading}
             className={`p-2 bg-zinc-500 text-white rounded-r-lg ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-zinc-600'}`}
           >
-            {isLoading ? 'Loading...' : 'Send'}
+            {/* {isLoading ? 'Loading...' : 'Send'} */}
+            Send
           </button>
         </form>
       </div>
