@@ -16,7 +16,7 @@ const MessageCard = ({ message }: {message: any}) => {
     >
       {message.role === "assistant" && (
         <Avatar className="mr-2">
-          <AvatarImage src={bot.src} alt="System Avatar" />
+          <AvatarImage className="bg-black" src={bot.src} alt="System Avatar" />
           <AvatarFallback>SA</AvatarFallback>
         </Avatar>
       )}

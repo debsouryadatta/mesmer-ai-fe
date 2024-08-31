@@ -13,3 +13,15 @@ export const useMessageStore = create<MessageState>((set, get) => ({
   }],
   setMessageStore: (messageStore: { role: string; content: string; }[]) => set({ messageStore }),
 }));
+
+
+interface UserState {
+  user: { email: string; name: string; } | null;
+  setUser: (user: { email: string; name: string; } | null) => void;
+}
+
+// Create the user store
+export const useUserStore = create<UserState>((set, get) => ({
+  user: null,
+  setUser: (user: { email: string; name: string; } | null) => set({ user }),
+}));
